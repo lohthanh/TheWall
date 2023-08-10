@@ -1,0 +1,6 @@
+@model MyViewModel
+
+<div>
+    @await Html.PartialAsync("_MessageForm", Model.Message)
+    @await Html.PartialAsync("_AllMessages", Model.AllMessages)
+</div>

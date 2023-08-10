@@ -1,0 +1,12 @@
+@model List<Message>
+
+
+<div class="w-75">
+    <h2>List of Messages</h2>
+    @{
+        foreach(Message m in Model)
+        {
+            <p>@m.MessageText</p>
+        }
+    }
+</div>
